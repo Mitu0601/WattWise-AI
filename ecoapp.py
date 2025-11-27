@@ -6,7 +6,7 @@ from datetime import datetime
 from PIL import Image
 
 
-API_KEY = "Add ur API"   
+API_KEY = "Add your API"   
 genai.configure(api_key=API_KEY)
 
 CARBON_FACTOR = 0.82  # kg CO2/kWh approx
@@ -375,3 +375,4 @@ if user_input:
     with st.chat_message("assistant"):
 
         st.markdown(reply)
+

@@ -6,7 +6,7 @@ from datetime import datetime
 from PIL import Image
 
 
-API_KEY = "AIzaSyCH-slfJV-Xu1SiUxcnXX-Tg-o93i2w4l0"   
+API_KEY = "Add ur API"   
 genai.configure(api_key=API_KEY)
 
 CARBON_FACTOR = 0.82  # kg CO2/kWh approx
@@ -373,4 +373,5 @@ if user_input:
     reply = get_bot_reply(user_input, bill_file, image_file, audio_file)
     st.session_state.messages.append({"role": "assistant", "content": reply})
     with st.chat_message("assistant"):
+
         st.markdown(reply)
